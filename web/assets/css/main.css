@@ -1,0 +1,47 @@
+@import "tailwind.css";
+@import "reset.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap');
+
+@font-face {
+    font-family: "IntegralCF";
+    src: url('assets/fonts/IntegralCF-Regular.woff');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'IntegralCF';
+    src: url(assets/fonts/IntegralCF-Medium.otf);
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'IntegralCF';
+    src: url(assets/fonts/IntegralCF-Bold.otf);
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'IntegralCF';
+    src: url(assets/fonts/IntegralCF-DemiBold.otf);
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'IntegralCF';
+    src: url(assets/fonts/IntegralCF-ExtraBold.otf);
+    font-style: normal;
+    font-weight: 800;
+}
+
+
+@font-face {
+    font-family: 'IntegralCF';
+    src: url(assets/fonts/IntegralCF-Heavy.otf);
+    font-style: normal;
+    font-weight: 900;
+}
