@@ -5,7 +5,7 @@ export default defineComponent({
 </script>
 
 <template>
-    <div class="bg-black w-full p-52 flex justify-center items-center flex-col text-4xl">
+    <div class="w-full p-52 flex justify-center items-center flex-col text-4xl">
         <h2 class="font-integral">
             déjà plus de
         </h2>
