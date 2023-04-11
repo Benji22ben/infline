@@ -4,4 +4,5 @@
     <BrandSection />
     <RelationshipSection />
     <CollaborationsSection />
+    <DomainSection />
 </template>

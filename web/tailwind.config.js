@@ -5,6 +5,7 @@ module.exports = {
       colors: {
         infline: {
             purple: '#B188EA',
+            gray: '#D8D8D8',
         }
       },
       fontFamily: {
