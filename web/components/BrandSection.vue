@@ -17,11 +17,12 @@ export default defineComponent({
 </script>
 
 <template>
-    <div class="font-poppins bg-infline-purple w-full flex flex-col justify-center items-center gap-16">
-        <div class="flex flex-row gap-14 justify-center items-center pt-52">
+    <div
+        class="font-poppins bg-infline-purple w-full flex flex-col justify-center items-center gap-16 lg:pt-52 lg:pb-52 pb-24 pt-60">
+        <div class="flex flex-col lg:flex-row gap-14 justify-center items-center">
             <img v-for="brand in brands" :src="brand" alt="">
         </div>
-        <p class="text-center text-black w-3/6 font-semibold text-xl pb-52">
+        <p class="text-center text-black w-3/6 font-semibold text-xl">
             Infline est la plateforme numéro 1 dans la mise en relation entre les influenceurs et les marques en France.
             Finies
             les recherches interminables, matchez avec le profil parfait
