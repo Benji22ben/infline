@@ -11,6 +11,9 @@ module.exports = {
       fontFamily: {
         'integral': ["IntegralCF", "sans-serif"],
         'poppins': ["Poppins", "sans-serif"]
+      },
+      screens: {
+        '3xl': '1700px',
       }
     }
   }
