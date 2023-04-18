@@ -32,7 +32,7 @@ export default defineComponent({
     <div class="bg-white w-full lg:p-32 p-20 space-y-20">
         <h1 class="text-black text-center md:text-left text-5xl 2xl:text-8xl font-integral font-bold">Les News</h1>
         <div class="flex flex-col md:flex-row justify-center items-start gap-16">
-            <NewsCard v-for="card in news.sort()" :image="card.image" :title="card.title" :date="card.date"
+            <IndexNewsCard v-for="card in news.sort()" :image="card.image" :title="card.title" :date="card.date"
                 :isPrincipal="card.isPrincipal" />
         </div>
     </div>

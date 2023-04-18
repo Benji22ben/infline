@@ -7,7 +7,7 @@ export default defineComponent({
 <template>
     <div
         class="relative w-full md:p-52 p-10 space-y-6 md:space-y-0 flex justify-center items-center flex-col lg:text-4xl md:text-3xl text-xl">
-        <h2 class="font-integral">
+        <h2 class="font-integral z-50">
             déjà plus de
         </h2>
         <h2 class="font-integral text-infline-purple">

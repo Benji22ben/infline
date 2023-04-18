@@ -6,8 +6,12 @@
                     class="text-black">INFLUENCEUR</span>
             </h1>
             <div class="flex flex-col-reverse lg:flex-row gap-10">
-                <NuxtLink to="/influencers"><Button class="bg-white">Je suis un influenceur</Button></NuxtLink>
-                <NuxtLink to="/brands"><Button class="bg-infline-purple text-white">Je suis une marque</Button></NuxtLink>
+                <NuxtLink to="/login">
+                    <CoreButton class="bg-white">Je suis un influenceur</CoreButton>
+                </NuxtLink>
+                <NuxtLink to="/login">
+                    <CoreButton class="bg-infline-purple text-white">Je suis une marque</CoreButton>
+                </NuxtLink>
             </div>
         </div>
         <img class="absolute transform lg:right-44 right-10 -bottom-40 md:bottom-0 md:top-20 w-1/2 3xl:w-1/5 lg:w-2/6 2xl:w-1/4"
