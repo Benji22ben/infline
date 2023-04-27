@@ -7,11 +7,11 @@
 
 
 <script lang="ts">
-export default defineComponent({
+export default ({
     name: 'Button',
     props: {
         type: {
-            type: String as PropType<string>,
+            type: String,
             required: false,
         }
     }

@@ -15,23 +15,23 @@
 </template>
 
 <script lang="ts">
-export default defineComponent({
+export default ({
     name: 'Input',
     props: {
         label: {
-            type: String as PropType<string>,
+            type: String,
             required: true,
         },
         icon: {
-            type: String as PropType<string>,
+            type: String,
             required: true,
         },
         placeholder: {
-            type: String as PropType<string>,
+            type: String,
             required: true,
         },
         type: {
-            type: String as PropType<string>,
+            type: String,
             required: true,
         },
     },

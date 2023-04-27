@@ -1,13 +1,13 @@
 <script lang="ts">
-export default defineComponent({
+export default ({
     name: 'InputsSection',
     props: {
         login: {
-            type: Boolean as PropType<boolean>,
+            type: Boolean,
             required: true,
         },
         submitLoginForm: {
-            type: Function as PropType<(data: any) => void>,
+            type: Function,
             required: true,
         },
     },

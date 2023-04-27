@@ -1,5 +1,5 @@
 <script lang="ts">
-export default defineComponent({
+export default ({
     name: 'DomainSection',
 })
 </script>

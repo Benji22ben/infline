@@ -8,23 +8,23 @@
 </template>
 
 <script lang="ts">
-export default defineComponent({
+export default ({
     name: 'Card',
     props: {
         image: {
-            type: String as PropType<string>,
+            type: String,
             required: true,
         },
         title: {
-            type: String as PropType<string>,
+            type: String,
             required: true,
         },
         date: {
-            type: String as PropType<string>,
+            type: String,
             required: true,
         },
         isPrincipal: {
-            type: Boolean as PropType<boolean>,
+            type: Boolean,
             required: true,
         },
     },
