@@ -6,7 +6,7 @@ export default ({
             type: Boolean,
             required: true,
         },
-        submitLoginForm: {
+        submitForm: {
             type: Function,
             required: true,
         },
@@ -19,6 +19,8 @@ export default ({
             userLogin: {
                 email: '',
                 password: '',
+                username: '',
+                passwordVerif: ""
             },
         }
     },
@@ -30,7 +32,7 @@ export default ({
         <NuxtLink to="/">
             <h1 class="font-integral font-bold text-2xl 2xl:text-4xl self-start p-10">INFLINE</h1>
         </NuxtLink>
-        <form method="post" class="px-32 py-16 flex flex-col space-y-10">
+        <form method="post" @submit.prevent="submitForm(userLogin)" class="px-32 py-16 flex flex-col space-y-10">
             <!-- Font Hack -->
             <span class="font-integral font-bold text-5xl">{{ login ? "SE CONNECTER" : "S" }}<span v-if="!login"
                     class="font-poppins">'</span>{{ login ? "" : "INSCRIRE" }}</span>
@@ -42,8 +44,14 @@ export default ({
                 }}</span>
                     </NuxtLink></span>
             </div>
-            <CoreInput v-model="userLogin.email" type="text" label="E-mail" icon="./assets/images/mail.svg"
+            <div class="w-full border border-solid border-red-500 bg-red-500 opacity-80 flex justify-center items-center p-2"
+                v-if="userLogin.password != userLogin.passwordVerif">
+                <span class="text-white">Attention les mots de passes ne correspondent pas</span>
+            </div>
+            <CoreInput v-model.trim="userLogin.email" type="text" label="E-mail" icon="./assets/images/mail.svg"
                 placeholder="Entre ton addresse e-mail" />
+            <CoreInput v-model.trim="userLogin.username" type="text" label="Nom d'utilisateur"
+                icon="./assets/images/mail.svg" placeholder="Entre ton nom d'utilisateur" />
             <div class="flex flex-col gap-4">
                 <CoreInput v-model="userLogin.password" type="password" label="Mot de passe"
                     icon="./assets/images/password.svg" placeholder="Entre ton mot de passe" />
@@ -55,9 +63,9 @@ export default ({
                     <a href=""><span class="text-[#999999]">Mot de passe oublié ?</span></a>
                 </div>
             </div>
-            <CoreInput type="password" v-if="!login" label="Confirmation de mot de passe"
+            <CoreInput type="password" v-if="!login" v-model="userLogin.passwordVerif" label="Confirmation de mot de passe"
                 icon="./assets/images/password.svg" placeholder="Confirmation ton mot de passe" />
-            <CoreButton type="submit" @click.native="submitLoginForm(userLogin)" class="bg-infline-purple text-white w-1/2">
+            <CoreButton type="submit" class="bg-infline-purple text-white w-1/2">
                 {{ login ? "SE CONNECTER" : "S" }}<span v-if="!login" class="font-poppins">'</span>{{ login ? "" :
                     "INSCRIRE" }}
             </CoreButton>
